@@ -2,7 +2,6 @@
 
 # todo: put this in a Makefile instead?
 set -e
-set -u
 
 basedir=$(dirname "$0")
 CUR_DIR=$(cd "${basedir}"; pwd -P)
@@ -15,10 +14,10 @@ export IDF_PATH="${CUR_DIR}/esp-idf"
 # git submodule update --init --recursive
 
 # install toolchain and dependencies for esp-idf
-# ${IDF_PATH}/install.sh
+${IDF_PATH}/install.sh
 
 # export environment variables for esp-idf toolchain and tools
-. ${IDF_PATH}/export.sh
+source "${IDF_PATH}/export.sh"
 
 # now we can start building micropython for esp32
 # build cross compiler
