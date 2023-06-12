@@ -23,4 +23,4 @@ source "${IDF_PATH}/export.sh"
 # build cross compiler
 make -C ${MP_DIR}/mpy-cross/
 make -C ${MP_ESP_PORT_DIR} submodules
-make -C ${MP_ESP_PORT_DIR} BOARD_DIR=${BOARD_DIR}/FRI3D_BADGE_2024 BOARD=FRI3D_BADGE_2024
+make -C ${MP_ESP_PORT_DIR} BOARD_DIR=${BOARD_DIR}/FRI3D_BADGE_2024 BUILD=${CUR_DIR}/build-FRI3D_BADGE_2024
