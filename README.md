@@ -4,7 +4,7 @@ The micropython codebase to support the Fri3dcamp 2024 badge
 ## Building
 Clone this repo and update all submodules recursively:
 ```
-git sumodule update --init --recursive
+git submodule update --init --recursive
 ```
 
 Then run the build script:
